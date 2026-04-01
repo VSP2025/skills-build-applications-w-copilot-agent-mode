@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 Django settings for octofit_tracker project.
 
@@ -9,36 +10,15 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
-from pathlib import Path
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-rrq&zbbwlkc!81uc$!l6g#v@4#rvet5yhrk&1uya@g5xiy($05'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
-
-# Application definition
-
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+<<<<<<< HEAD
+    'djongo',
+>>>>>>> a20f5c2 (OctoFit Tracker: Django backend, MongoDB, CORS, and API endpoints for users, teams, activities, leaderboard, and workouts)
     'octofit_tracker',
 ]
 
@@ -73,10 +53,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'octofit_tracker.wsgi.application'
 
+<<<<<<< HEAD
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+=======
+>>>>>>> a20f5c2 (OctoFit Tracker: Django backend, MongoDB, CORS, and API endpoints for users, teams, activities, leaderboard, and workouts)
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
@@ -87,6 +70,7 @@ DATABASES = {
         },
     }
 }
+<<<<<<< HEAD
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -130,4 +114,17 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
+=======
+
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = ['*']
+CORS_ALLOW_METHODS = ['*']
+
+LANGUAGE_CODE = 'en-us'
+TIME_ZONE = 'UTC'
+USE_I18N = True
+USE_TZ = True
+STATIC_URL = 'static/'
+>>>>>>> a20f5c2 (OctoFit Tracker: Django backend, MongoDB, CORS, and API endpoints for users, teams, activities, leaderboard, and workouts)
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
